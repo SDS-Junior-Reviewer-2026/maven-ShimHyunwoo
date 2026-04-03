@@ -26,6 +26,6 @@ jobs:
       - name: Send Email with SES
         run: |
           aws ses send-email \
-            --from "mincoding@naver.com" \
-            --destination "ToAddresses=sejin.choi@mincoding.co.kr" \
-            --message "Subject={Data=원빈이 잘생겻다},Body={Text={Data=야르렁 야르렁~}"
+            --from "your-email@example.com" \
+            --destination "ToAddresses=recipient@example.com" \
+            --message "Subject={Data='원빈이 잘생겻다'},Body={Text={Data='야르렁 야르렁~'}}"
